@@ -6,7 +6,20 @@ def mainpage(request):
     return render(request, 'peteeting.html')
 
 def petmap(request):
-    return render(request, 'PET MAP.html')
+    return render(request, 'map.html')
 
 def petchat(request):
-    return render(request, 'PET CHAT.html')
+    return render(request, 'chat.html')
+
+def community(request):
+    return render(request, 'community.html')
+
+def mainlogin(request):
+    return render(request, 'login.html')
+
+def homelogin(request):
+    return render(request, 'h_login.html')
+
+def place(request):
+    return render(request, 'place.html')
+

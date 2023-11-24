@@ -20,8 +20,12 @@ import pet.views
 
 urlpatterns = [
     path('', pet.views.mainpage, name='mainpage'), #포트 연결 시 pet/views.py의 mainpage 함수에 해당하는 부분을 기본url로 지정
-    path('map', pet.views.petmap, name='petmap'),
-    path('chat', pet.views.petchat, name='petchat'),
-    path('admin/', admin.site.urls),
+    path('map.html', pet.views.petmap, name='petmap'),
+    path('chat.html', pet.views.petchat, name='petchat'),
+    path('place.html', pet.views.place, name='place'),
+    path('community.html', pet.views.community, name='community'),
+    path('h_login.html', pet.views.homelogin, name='homelogin'),
+    path('login.html', pet.views.mainlogin, name='mainlogin'),
+    
     
 ]
